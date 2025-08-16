@@ -71,11 +71,13 @@
 
         SYMBOL {
             bindings = <
-&kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT  &kp CARET                             &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&kp GRAVE  &kp TILDE  &trans      &trans       &trans     &trans      &kp BACKSLASH  &kp SEMICOLON  &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS
-&trans     &trans     &trans      &trans       &trans     &trans      &kp PIPE       &kp COLON      &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-&trans     &trans     &trans      &trans       &trans     &trans      &trans         &trans                                                                         &trans
+&kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT  &kp CARET                                 &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&kp GRAVE  &kp TILDE  &trans      &trans       &trans     &kp K_MUTE      &kp BACKSLASH  &kp SEMICOLON  &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS
+&trans     &trans     &trans      &trans       &trans     &trans          &kp PIPE       &kp COLON      &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&trans     &trans     &trans      &trans       &trans     &trans          &trans         &trans                                                                         &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         ARROW_AND_FUNCTION {
@@ -85,8 +87,6 @@
 &trans  &trans          &trans          &trans           &trans  &trans      &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
 &trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans                           &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
