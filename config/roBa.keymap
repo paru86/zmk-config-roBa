@@ -46,6 +46,15 @@
     behaviors {
     };
 
+    macros {
+        grok_image: grok_image {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1 &kp LC(A) &kp LC(V) &kp ENTER>;
+            label = "GROK_IMAGE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
